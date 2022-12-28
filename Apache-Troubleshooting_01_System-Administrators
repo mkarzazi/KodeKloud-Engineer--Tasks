@@ -18,6 +18,7 @@ grep ServerName /etc/httpd/conf/httpd.conf
 grep ServerRoot /etc/httpd/conf/httpd.conf
 grep DocumentRoot /etc/httpd/conf/httpd.conf
 
+#Edit the httpd config file and make changes as per below
 vi /etc/httpd/conf/httpd.conf
 Listen 6000
 ServerName 172.16.238.12:6000
@@ -30,7 +31,7 @@ systemctl stop httpd
 systemctl enable --now httpd
 systemctl status httpd
 
-
+#Test
 curl http://172.16.238.10:6000
 
 #Repeat the same procedure in the other Nautilus Application Servers
