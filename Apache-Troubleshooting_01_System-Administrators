@@ -33,4 +33,4 @@ systemctl status httpd
 
 curl http://172.16.238.10:6000
 
-#Repeat the same for the other Nautilus Application Servers
+#Repeat the same procedure in the other Nautilus Application Servers
